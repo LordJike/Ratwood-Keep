@@ -120,7 +120,7 @@
 
 /datum/special_trait/cunning_linguist/on_apply(mob/living/carbon/human/character, silent)
 	ADD_TRAIT(character, TRAIT_GOODLOVER, "[type]")
-	switch(rand(1,5))
+	switch(rand(1,7))
 		if(1)
 			character.grant_language(/datum/language/elvish)
 		if(2)
@@ -131,9 +131,10 @@
 			character.grant_language(/datum/language/dwarvish)
 		if(5)
 			character.grant_language(/datum/language/orcish)
-		if(5)
+		if(6)
 			character.grant_language(/datum/language/celestial)
-
+		if(7)
+			character.grant_language(/datum/language/tabaxi)
 /datum/special_trait/corn_fed
 	name = "Corn Fed"
 	greet_text = span_notice("My diet was quite rich in corn.")
@@ -236,6 +237,7 @@
 	character.grant_language(/datum/language/beast)
 	character.grant_language(/datum/language/draconic)
 	character.grant_language(/datum/language/faexin)
+	character.grant_language(/datum/language/tabaxi)
 
 /datum/special_trait/civilizedbarbarian
 	name = "Tavern Brawler"
